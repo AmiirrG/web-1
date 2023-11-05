@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #header {
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 150px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      #header .banner {
+        /* width: 150px; */
+        /* border: 1px solid blue; */
+        margin-left: 20px;
+      }
+      #header .banner img {
+        width: 150px;
+      }
+      #header a {
+        text-decoration: none;
+      }
+      #header nav {
+        /* border: 1px solid green; */
+        display: flex;
+        align-items: center;
+        /* padding: 10px 20px; */
+        padding-right: 30px;
+      }
+      #header nav a {
+        padding: 10px 20px;
+        color: #303740;
+        transition: 0.5s;
+        /* font-weight: 900; */
+        font-size: 14px;
+      }
+      #header nav a:hover {
+        color: #da0b4e;
+      }
+      #header .right {
+        display: flex;
+      }
+      #header .left {
+        /* border: 1px solid rebeccapurple; */
+        align-items: center;
+        display: flex;
+      }
+      #header .login,
+      .register {
+        /* border: 1px solid blue; */
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: 900;
+        font-size: 15px;
+      }
+      .left .login {
+        color: #da0b4e;
+        border: 1px solid lightgrey;
+        transition: 0.5s;
+        margin-left: 20px;
+      }
+      .left .login:hover {
+        background-color: #da0b4e;
+        color: white;
+      }
+      .left .register {
+        background-color: black;
+        color: white;
+      }
+      #header .bar-icon {
+        display: none;
+      }
+      #header .bar-icon .bar {
+        font-size: 44px;
+        padding: 0 5px;
+      }
+      #header .bar-icon .holder {
+        /* border: 1px solid lightblue; */
+        cursor: pointer;
+      }
+      @media screen and (max-width: 1280px) {
+        #header nav {
+          display: none;
+        }
+        #header .left {
+          display: none;
+        }
+        #header .bar-icon {
+          display: block;
+        }
+      }
+      .dropdown {
+        /* border: 1px solid red; */
+        position: relative;
+      }
+      /* .dropdown .title {
+        background-color: yellow;
+      } */
+      .dropdown .description li {
+        /* border: 1px solid red;
+         */
+        border-bottom: 1px solid rgb(214, 201, 201);
+        padding: 10px 20px;
+      }
+      .dropdown .description {
+        background-color: white;
+        display: none;
+        position: absolute;
+        width: 250px;
+        list-style-type: none;
+        padding: 0px 10px;
+        margin-top: 30px;
+        /* border: 1px solid red; */
+        color: grey;
+        border-radius: 10px;
+      }
+      .dropdown:hover .description {
+        display: block;
+      }
+    </style>
+  </head>
+  <body dir="rtl">
+    <header id="header">
+      <div class="right">
+        <div class="banner">
+          <a href="#"> <img src="assets/img/caffegis.png" alt="" /></a>
+        </div>
+        <nav>
+          <a href="#">خانه</a>
+          <a href="#">دوره ها</a>
+          <a href="#">بلاگ</a>
+          <div class="dropdown">
+            <a href="#" class="title"
+              >اموزش های رایگان
+              <span class="ion-chevron-down" style="font-size: 12px"></span
+            ></a>
+            <ul class="description">
+              <a href="#"> <li>اموزش رایگان ArcGIS Pro</li></a>
+              <a href="#"><li>اموزش رایگان ArcGIS</li></a>
+              <a href="#"> <li>اموزش رایگان QGIS</li></a>
+              <a href="#"> <li>اموزش رایگان گلوبال مپر</li></a>
+              <a href="#"><li>اموزش رایگان نرمافزار Surfer</li></a>
+              <a href="#"><li>اموزش رایگان Civil 3D</li></a>
+              <a href="#"> <li>اموزش رایگان AutoCAD</li></a>
+              <a href="#"> <li>اموزش رایگان سنجش از دور</li></a>
+            </ul>
+          </div>
+          <a href="#">سوالات متداول</a>
+          <a href="#">تماس با ما</a>
+          <a href="#">درباره ما</a>
+        </nav>
+      </div>
+      <div class="left">
+        <a href="#" class="login">ورود</a>
+        <a href="#" class="register">ثبت نام</a>
+      </div>
+      <div class="bar-icon">
+        <div class="holder">
+          <span class="ion-android-menu bar"></span>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

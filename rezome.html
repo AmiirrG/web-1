@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: Roboto, sans-serif;
+      }
+      /* .product-container{
+        display: flex;
+      } */
+      #content {
+        display: flex;
+      }
+      /* aside */
+      #aside {
+        width: 300px;
+        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);
+        position: fixed;
+        height: 100%;
+        top: 10px;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+      }
+      #aside .top {
+        position: relative;
+      }
+      #aside .top > img {
+        display: block;
+        width: 100%;
+        height: 200px;
+      }
+      #aside .overlay {
+        position: absolute;
+        top: 0;
+        padding: 40px 30px;
+      }
+      #aside .overlay .avatar > img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+      }
+      #aside .intro {
+        color: white;
+        font-size: 12px;
+        font-weight: 200;
+        margin-top: 10px;
+      }
+      #aside .social {
+        margin-top: 10px;
+      }
+      #aside .social .apps {
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+        padding-right: 15px;
+      }
+      #aside .sidenav {
+        height: 100%;
+        background-color: white;
+      }
+      #aside .sidenav li {
+        list-style-type: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.54);
+        cursor: pointer;
+        margin-top: 5px;
+        transition: 0.5s;
+      }
+      #aside .sidenav li:hover {
+        background-color: rgba(211, 202, 202, 0.247);
+      }
+      #aside .sidenav-item i {
+        font-size: 24px;
+        word-spacing: 10px;
+      }
+      #aside .sidenav-item {
+        padding: 10px 10px;
+        margin-top: 5px;
+      }
+      #main {
+        margin-left: 310px;
+        width: 80%;
+        /* border: 1px solid red; */
+        height: 450px;
+        /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+          rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      }
+      #main .wallpaper {
+        /* border: 1px solid red; */
+        width: 100%;
+        /* height: 500px; */
+        /* margin-left: 20px; */
+        /* margin-right: 20px; */
+        padding: 10px 20px;
+        position: relative;
+      }
+      #main .wallpaper img {
+        width: 100%;
+        height: 350px;
+      }
+      #main .wallpaper .hamidi {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: absolute;
+        left: 30px;
+        bottom: -25px;
+        transition: 2s;
+      }
+      #main .wallpaper .hamidi:hover {
+        transform: rotate(360deg);
+      }
+      #main .informaition {
+        padding: 0px 120px;
+        color: gray;
+        font-size: 16px;
+      }
+      #main .right h3 {
+        text-align: center;
+      }
+      #main .right {
+        display: flex;
+        padding: 5px 20px;
+        /* border: 1px solid red; */
+      }
+      #main .right .jobs {
+        /* border :1px solid blue; */
+        padding: 0px 20px;
+        color: gray;
+        font-size: 15px;
+      }
+      #main .details {
+        display: flex;
+        justify-content: space-between;
+      }
+      @media screen and (max-width: 1120px) {
+        #main .right {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 445px) {
+        #main .right {
+          /* display: none; */
+          #content {
+            display: block;
+          }
+        }
+      }
+      #section {
+        /* position: relative; */
+        /* border: 1px solid red; */
+        width: 100%;
+        /* padding: 10px 20px; */
+        text-align: center;
+        /* top: -120px;
+        left: 260px; */
+        display: flex;
+        /* align-items: center; */
+        overflow: hidden;
+      }
+      #section .view p {
+        margin-top: 5px;
+      }
+      #section .view a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+      }
+      #section .view {
+        /* border: 1px solid red; */
+        padding: 30px 60px;
+        margin: 20px auto;
+        /* width: 100%; */
+      }
+      #section .view .icon {
+        font-size: 18px;
+      }
+      @media screen and (max-width: 1170px) {
+        #section .view {
+          width: 50%;
+        }
+        #section {
+          display: block;
+        }
+      }
+      .bar-icon {
+        background-color: blue;
+        display: none;
+      }
+      .bar-icon span {
+        font-size: 40px;
+        /* background-color: blue; */
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      @media screen and (max-width: 1170px) {
+        #aside {
+          display: none;
+        }
+        .bar-icon {
+          display: block;
+          margin-bottom: 6px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #main {
+          margin: auto;
+        }
+      }
+      .dropdown {
+        /* border: 1px solid red; */
+        position: relative;
+      }
+      /* .dropdown .title {
+        background-color: yellow;
+      } */
+      .dropdown .description li {
+        /* border: 1px solid red;
+         */
+        border-bottom: 1px solid rgb(214, 201, 201);
+        padding: 10px 20px;
+        transition: 1s;
+      }
+      .dropdown .description {
+        background-color: white;
+        display: none;
+        position: absolute;
+        width: 250px;
+        list-style-type: none;
+        padding: 0px 10px;
+        margin-top: 30px;
+        /* border: 1px solid red; */
+        color: grey;
+        border-radius: 10px;
+      }
+      .dropdown:hover .description {
+        display: block;
+        position: absolute;
+        z-index: 3;
+        /* background-color: ; */
+        cursor: pointer;
+      }
+      .dropdown .description li:hover {
+        background-color: rgba(211, 202, 202, 0.247);
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <div class="bar-icon">
+        <span class="ion-navicon-round"></span>
+      </div>
+      <ul class="description">
+        <li>
+          <i class="fa fa-home"> home</i>
+        </li>
+        <li>
+          <i class="fa fa-adjust"> about</i>
+        </li>
+        <li>
+          <i class="fa fa-picture-o"> resume </i>
+        </li>
+        <li>
+          <i class="fa fa-archive"> services </i>
+        </li>
+        <li>
+          <i class="fa fa-shopping-bag"> portfolio</i>
+        </li>
+        <li>
+          <i class="fa fa-address-book"> pricing </i>
+        </li>
+        <li>
+          <i class="fa fa-address-card"> blog </i>
+        </li>
+        <li>
+          <i class="fa fa-contao"> contact</i>
+        </li>
+      </ul>
+    </div>
+    <div id="content">
+      <aside id="aside">
+        <div class="top">
+          <img
+            src="assets/img/rezome/tn_WallpaperGram.IR_ws1588225871_43817.jpg"
+            alt=""
+          />
+        </div>
+        <div class="overlay">
+          <div class="avatar">
+            <img src="assets/img/hamidi.jpeg" alt="" />
+          </div>
+          <div class="intro">
+            <h1>amir hamidi</h1>
+            <p>aganji99@yahoo.com</p>
+          </div>
+          <div class="social">
+            <a href="mailto:aganji99@yahoo.com" class="apps">
+              <i class="fa fa-yahoo"></i>
+            </a>
+            <a href="https://t.me/amiirr_GG" class="apps">
+              <i class="fa fa-telegram"></i>
+            </a>
+            <a href="https://instagram/@_amir_ganji" class="apps">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/+9386918706" class="apps">
+              <i class="fa fa-whatsapp"></i>
+            </a>
+            <!-- <a href="facebook.com" class="apps">
+                  <i class="fa fa-facebook"></i>
+                </a> -->
+          </div>
+        </div>
+        <ul class="sidenav">
+          <li class="sidenav-item">
+            <i class="fa fa-home"> home</i>
+          </li>
+          <li class="sidenav-item">
+            <i class="fa fa-adjust"> about</i>
+          </li>
+          <li class="sidenav-item">
+            <i class="fa fa-picture-o"> resume </i>
+          </li>
+          <li class="sidenav-item">
+            <i class="fa fa-archive"> services </i>
+          </li>
+          <li class="sidenav-item">
+            <i class="fa fa-shopping-bag"> portfolio</i>
+          </li>
+          <li class="sidenav-item">
+            <i class="fa fa-address-book"> pricing </i>
+          </li>
+          <li class="sidenav-item">
+            <i class="fa fa-address-card"> blog </i>
+          </li>
+          <li class="sidenav-item">
+            <i class="fa fa-contao"> contact</i>
+          </li>
+        </ul>
+      </aside>
+      <main id="main">
+        <div class="wallpaper">
+          <img src="assets/img/rezome/download.jfif" alt="" />
+          <img src="assets/img/hamidi.jpeg" alt="" class="hamidi" />
+        </div>
+        <div class="details">
+          <div class="informaition">
+            <h2>amir hamidi</h2>
+            <p>front-end developer</p>
+          </div>
+          <div class="right">
+            <div class="jobs">
+              <h3>96%</h3>
+              <p>Jobs completed</p>
+            </div>
+            <div class="jobs">
+              <h3>10</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="jobs">
+              <h3>$25</h3>
+              <p>USD/hr</p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <section id="section">
+          <div class="view" style="background-color: rgb(0, 166, 0)">
+            <a href="#">
+              <i class="fa fa-video-camera icon">480+</i>
+            </a>
+            <p><a href="#">Happy Clints</a></p>
+          </div>
+          <div class="view" style="background-color: blue">
+            <a href="#">
+              <i class="fa fa-check icon">400+</i>
+            </a>
+            <p><a href="#">completed Projects</a></p>
+          </div>
+          <div class="view" style="background-color: red">
+            <a href="#">
+              <i class="fa fa-arrows-v icon">100 000+</i>
+            </a>
+            <p><a href="#">Links of code</a></p>
+          </div>
+          <div class="view" style="background-color: orange">
+            <a href="#">
+              <i class="fa fa-calendar-plus-o icon">1000+</i>
+            </a>
+            <p><a href="#">Followes</a></p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

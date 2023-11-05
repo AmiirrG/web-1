@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        position: relative;
+        margin: 10px 0;
+      }
+      .header::before {
+        content: "";
+        background: rgb(255, 0, 0);
+        background: linear-gradient(
+          90deg,
+          rgb(0, 55, 255) 0%,
+          rgba(255, 0, 0, 0) 100%
+        );
+        width: 300px;
+        height: 5px;
+        display: block;
+        position: absolute;
+        left: 0px;
+        bottom: -7px;
+        border-bottom-left-radius: 2.5px;
+        border-top-left-radius: 2.5px;
+      }
+      .box {
+        position: relative;
+        margin: 10px 0;
+      }
+      .box::before {
+        content: "";
+        background: rgb(15, 11, 79);
+        background: linear-gradient(
+          90deg,
+          rgba(15, 11, 79, 1) 0%,
+          rgba(9, 121, 99, 1) 54%,
+          rgba(198, 245, 255, 1) 100%
+        );
+        width: 300px;
+        height: 5px;
+        display: block;
+        position: absolute;
+        left: 0px;
+        bottom: -7px;
+        /* border-bottom-left-radius: 2.5px;
+        border-top-left-radius: 2.5px; */
+        border-radius: 0 50% 50% 0;
+      }
+      .btn {
+        text-decoration: none;
+        /* padding-left: 50px; */
+        position: relative;
+        display: inline-block;
+        padding: 5px 10px;
+        margin-left: 40px;
+        overflow: hidden;
+      }
+      .btn::before {
+        content: "";
+        background-color: red;
+        width: 100%;
+        height: 3px;
+        display: block;
+        position: absolute;
+        left: 100%;
+        bottom: 0;
+        transition: 1s;
+      }
+      .btn:hover::before {
+        left: 0;
+      }
+      .btn::after {
+        content: "";
+        background-color: green;
+        width: 100%;
+        height: 3px;
+        display: block;
+        position: absolute;
+        right: 100%;
+        top: 0;
+        transition: 1s;
+      }
+      .btn:hover::after {
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="header">Lorem ipsum dolor sit amet.</h1>
+    <p class="header">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, minus.
+    </p>
+    <h2 class="box">Lorem ipsum dolor sit amet.</h2>
+    <p class="box">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, minus.
+    </p>
+    <br /><br /><br />
+    <a href="tamrin_jalase16.html" class="btn">HOME</a>
+  </body>
+</html>

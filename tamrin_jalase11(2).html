@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .product_container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .product {
+      border: 2px solid blue;
+      font-weight: 900;
+      font-size: 20px;
+      padding: 20px;
+      width: 20%;
+
+      transition: 1s;
+      border-radius: 20px;
+      background-color: rgb(210, 208, 208);
+    }
+    .product a {
+      color: black;
+      text-decoration: none;
+    }
+    .product a:hover {
+      color: white;
+    }
+    .product:hover {
+      background-color: blue;
+    }
+    .box {
+      background-color: blue;
+    }
+  </style>
+  <body dir="rtl">
+    <>
+    <h2 style="text-align: center">برترین دسته بندی ها</h2>
+    <p style="text-align: center; color: gray">جستجوی برترین دسته بندی ها</p>
+    <div class="product_container">
+      <div class="product box">
+        <a href="#"> لباس ها </a> <br />
+        <a href="#">440 محصول</a>
+      </div>
+      <div class="product">
+        <a href="#"> ساعت ها</a> <br />
+        <a href="#"> 10 محصول</a>
+      </div>
+      <div class="product">
+        <a href="#"> کیف ها</a> <br />
+        <a href="#"> 20 محصول</a>
+      </div>
+
+      <div class="product">
+        <a href="#"> کفش ها</a> <br />
+        <a href="#">10 محصول</a>
+      </div>
+    </div>
+    <div class="mahsool">
+      <a href="#">
+        <img
+          src="assets/img/3mod.jpg"
+          alt=""
+          width="100%"
+          style="margin-top: 20px"
+      /></a>
+    </div>
+  </body>
+</html>

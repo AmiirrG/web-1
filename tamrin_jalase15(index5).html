@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .headline {
+        text-align: center;
+        /* width: 50%; */
+      }
+      .headline h1 {
+        color: rgb(85, 81, 81);
+        font-size: 35px;
+        padding: 10px;
+      }
+      .headline span {
+        color: grey;
+        padding-bottom: 10px;
+        border-bottom: 1px solid grey;
+      }
+      .product-container{
+        display: flex;
+      }
+      .product {
+        width: 25%;
+        /* height: 300px; */
+        border: 1px solid red;
+        margin-top: 20px;
+      }
+      .banner{
+        position: relative;
+      }
+      .banner img {
+        width: 100%;
+        display: block;
+      }
+      .info {
+        text-align: center;
+        padding: 20px;
+        color: gray;
+        font-weight: 900;
+      }
+      .star{
+        color: gold;
+        font-size: 12px;
+      }
+      .sale{
+        background-color:red ;
+        color: white;
+        padding: 0 10px;
+        position: absolute;
+        top: 20px;
+        left: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="headline">
+      <h1>Featured products</h1>
+      <span>SPRING/SUMMER 2016</span>
+    </div>
+   
+    <div class="product-container">
+      <div class="product">
+        <div class="banner">
+          <img src="assets/img/index/denim1.jpg" alt="" />
+          <span class="sale">sale!</span>
+        </div>
+        <div class="info"><p>
+          Denim gray style
+        </p>
+        <span class="ion-ios-star star"></span>
+        <span class="ion-ios-star star"></span>
+        <span class="ion-ios-star star"></span>
+        <span class="ion-ios-star star"></span>
+        <span class="ion-ios-star star"></span>
+      </div>
+      <div class="product">
+        <div class="banner">
+          <img src="assets/img/index/denim1.jpg" alt="" />
+          <span class="sale">sale!</span>
+        </div>
+        <div class="info"><p>
+          Denim gray style
+        </p>
+        <span class="ion-ios-star star"></span>
+        <span class="ion-ios-star star"></span>
+        <span class="ion-ios-star star"></span>
+        <span class="ion-ios-star star"></span>
+        <span class="ion-ios-star star"></span>
+      </div>
+      
+    </div>
+   
+  
+  </body>
+</html>

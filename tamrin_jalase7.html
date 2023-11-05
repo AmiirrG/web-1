@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jalase 7om</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="fname"> nam: </label>
+      <input type="text" id="fname" name="nam" placeholder="esm" />
+      <br />
+      <label for="lname">name khanevadegi:</label>
+      <input
+        type="text"
+        id="lname"
+        name="name khanevadegi"
+        placeholder="family"
+      />
+      <input type="hidden" id="eshterak" name="eshterak" value="4734" />
+      <br />
+      <input type="submit" value="sabte nam" />
+      <input type="reset" /> <br /><br />
+      <hr />
+      <input type="radio" id="amir" name="best_name" value="amir" />
+      <label for="amir">amir</label> <br />
+      <input type="radio" id="mammad" name="best_name" value="mammad" />
+      <label for="mammad"> mammad</label> <br />
+      <input type="radio" id="ali" name="best_name" value="ali" />
+      <label for="ali"> ali</label> <br />
+      <button>sabt</button> <br />
+      <br />
+      <hr />
+      <input type="checkbox" id="vasile1" name="vasile1" value="motor" />
+      <label for="vasile1">motor</label> <br />
+      <input type="checkbox" id="vasile2" name="vasile2" value="mashin" />
+      <label for="vasile2"> mashin</label> <br />
+      <input type="checkbox" id="vasile3" name="vasile3" value="jet" />
+      <label for="vasile3"> jet</label> <br />
+      <input
+        type="image"
+        src="assets/img/submit.jpg"
+        alt="submit"
+        style="width: 70px"
+        height="50px"
+      />
+      <br /><br />
+      <hr />
+      <label for="best_color"> behtarin range khod ra entekhab konid</label>
+      <input type="color" id="best_color" name="best_color" value="#0000ff" />
+      <button>submit</button> <br />
+      <br />
+      <hr />
+      <label for="tavalod">tavalod be miladi</label>
+      <input type="date" id="tavalod" name="tavalod" />
+      <input type="submit" value="sabt" script="('tavalodet mobarak')" />
+      <br />
+      <br />
+      <hr />
+      <label for="datemin">
+        lotfan tarikhi baad az 1995_01_01 entekhab konid</label
+      >
+      <input type="date" id="datemin" name="datemin" min="1995_01_01" /> <br />
+      <label for="datemax">
+        lotfan tarikhi qabl az 1940_01_01 entekhab nakonid</label
+      >
+      <input type="date" id="datemax" name="datemax" max="1940_01_01" /> <br />
+      <input type="submit" /> <br /><br />
+      <hr />
+      <label for="local"> tarikh va saate tavalode khodra entekhab konid</label>
+      <input type="datetime-local" id="local" name="local" />
+      <input type="submit" />
+    </form>
+    <br /><br />
+    <hr />
+    <label for="email"> email:</label>
+    <input type="email" id="email" name="email" /><br />
+    <label for="pass">password:</label>
+    <input type="password" id="pass" name="pass" />
+    <br />
+    <input type="submit" />
+    <br /><br />
+    <hr />
+    <label for="file">file entekhab konid:</label>
+    <input type="file" id="file" name="file" multiple /> <br />
+    <input type="submit" value="sabt" /> <br />
+    <br />
+    <hr />
+    <label for="tedad">tetad ra entekhab konid</label>
+    <input type="number" id="tedad" name="tedad" min="0" max="100" step="5" />
+    <input type="submit" /> <br /><br />
+    <hr />
+    <label for="seda"> seda (beyne 0 - 100)</label>
+    <input type="range" id="seda" name="seda" min="0" max="100" />
+    <br /><br />
+    <hr />
+    <label for="search">search google</label>
+    <input type="search" id="search" name="search" />
+    <button>submit</button> <br /><br />
+    <hr />
+    <label for="phone"> shomare telefone khodra vared konid:</label>
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      pattern="[0-9]{4}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+    />
+    <input type="submit" /> <br /><br />
+    <hr />
+    <label for="zaman"> zaman ra entekhab konid:</label>
+    <input type="time" id="zaman" name="zaman" />
+  </body>
+</html>

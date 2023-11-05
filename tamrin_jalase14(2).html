@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 10px;
+      }
+      .product {
+        border: 1px solid red;
+        padding: 20px 20px;
+        width: 40%;
+        position: relative;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .product-container .product .icon {
+        width: 80px;
+        /* border: 1px solid red; */
+        padding: 15px 15px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+      }
+      .product-container .product .info {
+        padding: 10px 20px;
+      }
+      /* @media screen and (max-width: 940px) {
+        .product {
+          width: calc(50%);
+        } */
+      /* } */
+      .box {
+        width: 30px;
+        border: 1px solid red;
+        padding: 20px 20px;
+        margin-top: 20px;
+        margin-left: 30px;
+        font-size: 15px;
+      }
+      .box_1 {
+        background-color: blue;
+        color: white;
+        position: relative;
+        border-radius: 10px;
+      }
+      .box_1 .mic {
+        position: absolute;
+        bottom: -10px;
+        left: -10px;
+        border: 1px solid green;
+        font-size: 20px;
+        background-color: red;
+        border-radius: 50%;
+        padding: 5px;
+      }
+      .box_1 .monitor {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        /* border: 1px solid green; */
+        font-size: 15px;
+        background-color: green;
+        border-radius: 50%;
+        padding: 5px;
+      }
+      .box_2 {
+        background-color: black;
+        color: gold;
+        position: relative;
+        border-radius: 50%;
+      }
+      .box_2 .location {
+        position: absolute;
+        top: -10px;
+        right: -5px;
+        font-size: 15px;
+        background-color: yellow;
+        border-radius: 50%;
+        padding: 5px;
+        color: white;
+      }
+      .box_3 {
+        background-color: green;
+        border-radius: 20px;
+        color: blue;
+        position: relative;
+      }
+      .box_3 .bolt {
+        color: gold;
+        position: absolute;
+        left: -5px;
+        top: -10px;
+        font-size: 20px;
+        background-color: black;
+        border-radius: 50%;
+        padding: 5px;
+      }
+      .box_4 {
+        background-color: gray;
+        border-radius: 20px;
+        position: relative;
+      }
+      .box_4 .controller {
+        color: black;
+        position: absolute;
+        right: -5px;
+        bottom: -10px;
+        font-size: 20px;
+        background-color: blue;
+        border-radius: 50%;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="headline" style="text-align: center">
+      <p style="color: gray; margin-top: 20px">دسته بندی های منتخب</p>
+      <p style="font-size: 20px; font-weight: 900">
+        موضوعات و محور های اموزشی <span style="color: red">پرمنتخب</span>
+      </p>
+    </div>
+    <div class="product-container">
+      <div class="product" style="background-color: rgba(154, 222, 69, 0.1)">
+        <img src="assets/img/cat3.png" alt="" class="icon" />
+        <div class="info">
+          <h2>اموزش ArcGIS desktop</h2>
+          <p><span class="ion-calendar"></span> 3دوره اموزشی</p>
+        </div>
+      </div>
+      <div class="product" style="background-color: rgba(0, 173, 182, 0.1)">
+        <img src="assets/img/cat2.png" alt="" class="icon" />
+        <div class="info">
+          <h2>اموزش گوگل ارث</h2>
+          <p><span class="ion-calendar"></span> 1دوره اموزشی</p>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <hr />
+    <div class="box box_1">
+      item
+      <span class="ion-ios-mic-outline mic"></span>
+      <span class="ion-ios-monitor monitor"></span>
+    </div>
+    <div class="box box_2">
+      item
+      <span class="ion-ios-location location"></span>
+    </div>
+    <div class="box box_3">item <span class="ion-ios-bolt bolt"></span></div>
+    <div class="box box_4">
+      item
+      <span class="ion-ios-game-controller-a controller"></span>
+    </div>
+  </body>
+</html>

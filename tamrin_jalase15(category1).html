@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      #header {
+        display: flex;
+        padding: 20px 40px;
+      }
+      .brand {
+        font-size: 25px;
+        font-weight: 900;
+        border: 1px solid rgb(157, 157, 157);
+        padding: 20px;
+        width: 150px;
+        /* display: flex; */
+      }
+      .search {
+        display: flex;
+        align-items: center;
+        position: relative;
+        /* border: 1px solid rgb(157, 157, 157); */
+        margin-left: 40px;
+      }
+      .search input {
+        padding: 8px 10px;
+        width: 340px;
+        border-radius: 5px;
+        /* font-size: 17px; */
+        /* align-items: center; */
+        /* position: relative; */
+      }
+      .search img {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 5px;
+        top: 10pxpx; /* align-items: center; */
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+      }
+      nav a {
+        text-decoration: none;
+        padding: 10px 20px;
+        color: black;
+        transition: 1s;
+      }
+      nav a:hover {
+        color: lightsalmon;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div class="brand">
+        <h1>PiKa</h1>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="search here..." />
+        <img src="assets/img/zarebin.jpg" alt="" />
+      </div>
+      <nav>
+        <a href="#">home</a>
+        <a href="#">products</a>
+        <a href="#">demo</a>
+        <a href="#">blog</a>
+        <a href="#">orders</a>
+        <a href="#">contact us</a>
+      </nav>
+    </header>
+  </body>
+</html>

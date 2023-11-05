@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .product-container {
+        /* border: 2px solid red; */
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .product {
+        /* border: 2px solid blue; */
+        width: 49%;
+        /* border-radius: 10px; */
+        padding: 10px 10px;
+      }
+      .product .image {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+      }
+      .input-parent {
+        width: 50%;
+        position: relative;
+      }
+      .input-parent input {
+        width: 100%;
+        padding: 5px 10px;
+        font-size: 15px;
+        font-weight: 500;
+        transition: 1s;
+        border: 1px solid lightblue;
+      }
+      .input-parent input:focus {
+        border: 1px solid blue;
+        outline: none;
+      }
+      .input-parent .magnify {
+        width: 30px;
+        height: 25px;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product-container">
+      <div class="product">
+        <a href="#" title="پارتنرشیپ - اس اس وس">
+          <img src="assets/img/digikala gova.webp" alt="" class="image"
+        /></a>
+      </div>
+      <div class="product">
+        <a href="#" title="پارتنرشیپ - مای لیدی"
+          ><img src="assets/img/digikala oltra.webp" alt="" class="image"
+        /></a>
+      </div>
+      <div class="product">
+        <a href="#" title="پارتنرشیپ - مچر">
+          <img src="assets/img/digikala maccer.webp" alt="" class="image"
+        /></a>
+      </div>
+      <div class="product">
+        <a href="#" title="پارتنرشیپ - کوکومی">
+          <img src="assets/img/digikala cocomi.webp" alt="" class="image"
+        /></a>
+      </div>
+    </div>
+    <div class="input-parent">
+      <input type="text" placeholder="search..." />
+      <img src="assets/img/zarebin.jpg" alt="" class="magnify" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .product {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      @media screen and (max-width: 680px) {
+        .product-container {
+          width: 100%;
+        }
+        .product {
+          width: 100%;
+        }
+      }
+      .product-container {
+        width: 50%;
+        padding: 20px 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+
+      .headline {
+        width: 100%;
+      }
+      .box {
+        width: 100%;
+        padding: 10px 15px;
+        display: flex;
+      }
+      .box_1 {
+        border-bottom: 2px solid rgb(220, 217, 217);
+      }
+      .box img {
+        width: 90px;
+        height: 90px;
+      }
+      .banner {
+        padding: 20px 20px;
+      }
+      .info {
+        padding-top: 20px;
+      }
+      .star {
+        font-size: 12px;
+        color: yellow;
+      }
+      .view {
+        border: 1px solid red;
+        width: 100%;
+        padding: 10px 0px;
+        text-align: center;
+        background-color: #ca2751;
+        color: white;
+      }
+      .shop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .buy {
+        width: 33%;
+        border: 1px solid rgb(197, 189, 189);
+        padding: 20px 20px;
+        /* text-align: center; */
+        display: flex;
+      }
+      .dollor {
+        /* position: relative;
+        top: 10px; */
+        padding: 10px;
+        font-size: 20px;
+        border: 3px solid rgb(197, 196, 196);
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product">
+      <div class="product-container">
+        <div class="headline box_1" style="text-align: center">
+          <h2>Top Sale</h2>
+          <p>SPRING/SUMMER 2016</p>
+        </div>
+        <div class="box box_1">
+          <div class="banner">
+            <img src="assets/img/index/axe 1.webp" alt="" />
+          </div>
+          <div class="info">
+            <p>Womens tank tops</p>
+            <!-- <br /> -->
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <br />
+            <h2>$29.00</h2>
+          </div>
+        </div>
+        <div class="box box_1">
+          <div class="banner">
+            <img src="assets/img/index/axe 2.webp" alt="" />
+          </div>
+          <div class="info">
+            <p>Cow leather jacket</p>
+            <!-- <br /> -->
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <br />
+            <h2>$89.00</h2>
+          </div>
+        </div>
+        <div class="box">
+          <div class="banner">
+            <img src="assets/img/index/axe 3.jpg" alt="" />
+          </div>
+          <div class="info">
+            <p>headphone fashio</p>
+            <!-- <br /> -->
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <br />
+            <h2>$89.00</h2>
+          </div>
+        </div>
+        <div class="view">VIEW ALL PRODUCTS</div>
+      </div>
+      <div class="product-container">
+        <div class="headline box_1" style="text-align: center">
+          <h2>New Arrivals</h2>
+          <p>SPRING/SUMMER 2016</p>
+        </div>
+        <div class="box box_1">
+          <div class="banner">
+            <img src="assets/img/index/axe 4.jpg" alt="" />
+          </div>
+          <div class="info">
+            <p>Womens tank tops</p>
+            <!-- <br /> -->
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <br />
+            <h2>$29.00</h2>
+          </div>
+        </div>
+        <div class="box box_1">
+          <div class="banner">
+            <img src="assets/img/index/axe 5.jpg" alt="" />
+          </div>
+          <div class="info">
+            <p>Cow leather jacket</p>
+            <!-- <br /> -->
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <br />
+            <h2>$89.00</h2>
+          </div>
+        </div>
+        <div class="box">
+          <div class="banner">
+            <img src="assets/img/index/axe 6.jpg" alt="" />
+          </div>
+          <div class="info">
+            <p>headphone fashio</p>
+            <!-- <br /> -->
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <span class="ion-ios-star star"></span>
+            <br />
+            <h2>$89.00</h2>
+          </div>
+        </div>
+        <div class="view">VIEW ALL PRODUCTS</div>
+      </div>
+    </div>
+
+    <br /><br />
+    <hr />
+    <br />
+    <br />
+    <div class="shop">
+      <div class="buy">
+        <span class="ion-pricetag dollor"></span>
+        <div class="free">
+          <h4>Free shipping</h4>
+          <p style="color: gray">Free for all over $100</p>
+        </div>
+      </div>
+      <div class="buy">
+        <span class="ion-card dollor"></span>
+        <div class="free">
+          <h4>Gift Cards</h4>
+          <p style="color: gray">Free for all over $100</p>
+        </div>
+      </div>
+      <div class="buy">
+        <span class="ion-cash dollor"></span>
+        <div class="free">
+          <h4>Friendly support</h4>
+          <p style="color: gray">Free for all over $100</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

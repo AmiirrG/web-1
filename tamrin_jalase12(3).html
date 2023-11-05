@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .product {
+        /* border: 2px solid red; */
+        padding: 5px 10px;
+        width: 48%;
+        display: flex;
+        transition: 1s;
+        background-color: rgb(65, 65, 248);
+        border-radius: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 30px 30px;
+      }
+
+      .product:hover {
+        background-color: aqua;
+      }
+      .product .absolute {
+        position: absolute;
+        left: 15px;
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body dir="rtl">
+    <div class="product-container">
+      <div class="product">
+        <a href="#"><img src="assets/img/sargarmi.webp" alt="" /></a>
+        <p>سرگرمی <span class="absolute">></span></p>
+      </div>
+      <div class="product">
+        <a href="#"> <img src="assets/img/amoozesh.webp" alt="" /></a>
+
+        <p>اموزش<span class="absolute">></span></p>
+      </div>
+      <div class="product">
+        <a href="#"> <img src="assets/img/kharid.webp" alt="" /></a>
+        <p>خرید <span class="absolute">></span></p>
+      </div>
+      <div class="product">
+        <a href="#"> <img src="assets/img/shabakeha.webp" alt="" /></a>
+        <p>شبکه های اجتمایی <span class="absolute">></span></p>
+      </div>
+      <div class="product">
+        <a href="#"> <img src="assets/img/axasi.webp" alt="" /></a>
+        <p>عکاسی و ویدیو <span class="absolute">></span></p>
+      </div>
+      <div class="product">
+        <a href="#"></a> <img src="assets/img/omoormali.webp" alt="" />
+        <p>امور مالی <span class="absolute">></span></p>
+      </div>
+    </div>
+  </body>
+</html>

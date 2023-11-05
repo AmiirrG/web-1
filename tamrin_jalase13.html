@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: Roboto, sans-serif;
+      }
+      /* aside */
+      #aside {
+        width: 300px;
+        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);
+        position: fixed;
+        height: 100%;
+        top: 10px;
+        left: 10px;
+      }
+      #aside .top {
+        position: relative;
+      }
+      #aside .top > img {
+        display: block;
+        width: 100%;
+      }
+      #aside .overlay {
+        position: absolute;
+        top: 0;
+        padding: 40px 30px;
+      }
+      #aside .overlay .avatar > img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+      }
+      #aside .intro {
+        color: white;
+        font-size: 12px;
+        font-weight: 200;
+        margin-top: 10px;
+      }
+      #aside .social {
+        margin-top: 10px;
+      }
+      #aside .social .apps {
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+      }
+      #aside .sidenav {
+        height: 100%;
+        background-color: white;
+      }
+      #aside .sidenav li {
+        list-style-type: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.54);
+        cursor: pointer;
+      }
+      #aside .sidenav li:hover {
+        background-color: rgba(211, 202, 202, 0.247);
+      }
+      #aside .sidenav-item i {
+        font-size: 24px;
+        word-spacing: 10px;
+      }
+      #aside .sidenav-item {
+        padding: 10px 10px;
+        margin-top: 5px;
+      }
+      #maincontent {
+        margin-left: 300px;
+        padding: 20px;
+      }
+      #maincontent .product {
+        /* border: 1px solid red; */
+        width: 1000px;
+        position: relative;
+      }
+      #maincontent .product img {
+        width: 1196px;
+        /* display: flex; */
+        height: 400px;
+      }
+      #maincontent .hamidi {
+        position: absolute;
+        top: 380px;
+        padding: 0 20px;
+        display: flex;
+      }
+      #maincontent .hamidi img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+      #maincontent .hamidi .tozih {
+        /* border: 2px solid red; */
+        /* display: inline-block; */
+        padding: 50px 20px 0;
+        color: gray;
+      }
+      #maincontent .darsad-koli {
+        /* width: 100%; */
+        display: flex;
+        /* text-align: right; */
+        /* align-items: flex-end; */
+        /* direction: rtl; */
+        padding: 10px 570px;
+        /* border: 2px solid red; */
+        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);
+      }
+      #maincontent .darsad-koli .darsad {
+        /* border: 2px solid blue; */
+        padding: 0px 67px;
+        color: gray;
+      }
+
+      .product-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+      .product-1 {
+        width: 20%;
+        padding: 30px 50px;
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <aside id="aside">
+        <div class="top">
+          <img src="https://picsum.photos/id/191/600/400" alt="" />
+        </div>
+        <div class="overlay">
+          <div class="avatar">
+            <img src="assets/img/hamidi.jpeg" alt="" />
+          </div>
+          <div class="intro">
+            <h1>amir hamidi</h1>
+            <p>aganji99@yahoo.com</p>
+          </div>
+          <div class="social">
+            <a href="mailto:aganji99@yahoo.com" class="apps">
+              <i class="fa fa-yahoo"></i>
+            </a>
+            <a href="https://t.me/amiirr_GG" class="apps">
+              <i class="fa fa-telegram"></i>
+            </a>
+            <a href="https://instagram/@_amir_ganji" class="apps">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/+9386918706" class="apps">
+              <i class="fa fa-whatsapp"></i>
+            </a>
+            <a href="facebook.com" class="apps">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+        <ul class="sidenav">
+          <li class="sidenav-item">
+            <i class="fa fa-home"> home</i>
+          </li>
+          <li class="sidenav-item">
+            <i class="fa fa-adjust"> about</i>
+          </li>
+          <li class="sidenav-item">
+            <i class="fa fa-picture-o"> resume </i>
+          </li>
+          <li class="sidenav-item">
+            <i class="fa fa-archive"> services </i>
+          </li>
+          <li class="sidenav-item">
+            <i class="fa fa-shopping-bag"> portfolio</i>
+          </li>
+          <li class="sidenav-item">
+            <i class="fa fa-address-book"> pricing </i>
+          </li>
+          <li class="sidenav-item">
+            <i class="fa fa-address-card"> blog </i>
+          </li>
+          <li class="sidenav-item">
+            <i class="fa fa-contao"> contact</i>
+          </li>
+        </ul>
+      </aside>
+      <main id="maincontent">
+        <div class="product">
+          <img src="assets/img/godfather 2.jpg" alt="" />
+        </div>
+        <div class="hamidi">
+          <img src="assets/img/hamidi.jpeg" alt="" />
+          <div class="tozih">
+            <h2>amir hamidi</h2>
+            <p>front-end developer</p>
+          </div>
+        </div>
+        <div class="darsad-koli">
+          <div class="darsad">
+            <h4 style="text-align: center">96%</h4>
+            <p>jobscompleted</p>
+          </div>
+          <div class="darsad">
+            <h4 style="text-align: center">10</h4>
+            <p>yearsExperience</p>
+          </div>
+          <div class="darsad">
+            <h4 style="text-align: center">$25</h4>
+            <p>USD/hr</p>
+          </div>
+        </div>
+        <div class="product-container">
+          <div class="product-1" style="background-color: green">
+            <i class="fa fa-align-center" style="text-align: center">480+</i>
+            <p>HappyClients</p>
+          </div>
+          <div class="product-1" style="background-color: blue">
+            <i class="fa fa-check">400+</i>
+            <p>CompletedProjects</p>
+          </div>
+          <div class="product-1" style="background-color: red">
+            <i class="fa fa-arrows">100000+</i>
+            <p>Linesofcode</p>
+          </div>
+          <div class="product-1" style="background-color: orange">
+            <i class="fa fa-bank">1000+</i>
+            <p>Followers</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

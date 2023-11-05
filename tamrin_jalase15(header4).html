@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #header {
+        /* border: 1px solid red; */
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      }
+      .up {
+        display: flex;
+        justify-content: space-between;
+      }
+      .up-right {
+        display: flex;
+        padding: 20px;
+      }
+      .search {
+        position: relative;
+        margin-right: 30px;
+      }
+      .search input {
+        padding: 8px 50px;
+        width: 500px;
+        border-radius: 5px;
+        /* font-size: 17px; */
+        align-items: center;
+      }
+      .search img {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        align-items: center;
+      }
+      .up-left {
+        align-items: center;
+        display: flex;
+      }
+      .up-left a {
+        text-decoration: none;
+        padding: 5px 10px;
+        /* align-items: center; */
+        font-size: 14px;
+        color: black;
+        border: 1px solid gray;
+        border-radius: 5px;
+      }
+      .buy {
+        display: none;
+      }
+      .down {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      .arrow {
+        padding-left: 5px;
+      }
+      .down-right a {
+        text-decoration: none;
+        padding: 5px 30px;
+        color: black;
+      }
+      .down-left a {
+        text-decoration: none;
+        color: black;
+      }
+      @media screen and(max-width: 860px) {
+        .down-right {
+          display: none;
+        }
+        .buy {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body dir="rtl">
+    <header id="header">
+      <div class="up">
+        <div class="up-right">
+          <div class="brand">
+            <img src="assets/img/logo.svg" alt="" />
+          </div>
+          <div class="search">
+            <input type="text" placeholder="جست و جو" />
+            <img src="assets/img/zarebin.jpg" alt="" />
+          </div>
+        </div>
+        <div class="up-left">
+          <a href="#"
+            ><span class="ion-android-arrow-back arrow"></span> ورود</a
+          >
+          <a href="#"> ثبت نام</a>
+        </div>
+        <div class="buy">
+          <span class="ion-ios-cart"></span>
+        </div>
+      </div>
+      <div class="down">
+        <div class="down-right">
+          <a href="#">شگفت انگیزها</a>
+          <a href="#">سوپرمارکت</a>
+          <a href="#">کارت هدیه</a>
+          <a href="#">پرفروش ترین ها</a>
+          <a href="#">تخفیف ها و پیشنهادها</a>
+        </div>
+        <div class="down-left">
+          <a href="#" title="لطفا شهر خود را انتخاب کنبد"
+            >لطفا شهر خود را انتخاب کنبد</a
+          >
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
